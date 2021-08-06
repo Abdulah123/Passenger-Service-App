@@ -16,6 +16,8 @@ git clone
 - Postman for testing purposes (Optional)
 
 ## Run
+- Install all the project dependencies
+
 - Type this command in the terminal:
 ```bash
 mvn clean install
