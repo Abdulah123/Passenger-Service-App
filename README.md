@@ -16,9 +16,7 @@ git clone
 - Postman for testing purposes (Optional)
 
 ## Run
-- Install all the project dependencies
-
-- Type this command in the terminal:
+- Install all the project dependencies by typing this command in the terminal:
 ```bash
 mvn clean install
 ```
@@ -48,6 +46,7 @@ This App allows you to preform CRUD operations for the passenger and search for 
 
  1. Route URL: ```http://localhost:8080/passengers``` on this route you can preform GET and POST request, so you can (GET) all passengers in the database , add new (POST) passengers and (DELETE) all passengers.
  
+ ### GET
  ```
  [
     {
@@ -63,7 +62,28 @@ This App allows you to preform CRUD operations for the passenger and search for 
   .
 ]
 ```
+ ### POST
  
+ ```
+ {
+    "firstName": "Ahmed",
+    "lastName": "Ahmed",
+    "passportID": 12547784,
+    "email": "ahmed@gmail.com"
+}
+ ```
+ ### Result 
+ 
+ ```
+ {
+    "id": 4,
+    "firstName": "Ahmed",
+    "lastName": "Ahmed",
+    "passportID": 12547784,
+    "email": "ahmed@gmail.com"
+}
+ ```
+
  2. Route URL: ```http://localhost:8080/passengers/{id}``` on this route you preform GET,DELETE and PUT request (Retrieve), so you can delete, update and get the passengers by its id.
  
  
