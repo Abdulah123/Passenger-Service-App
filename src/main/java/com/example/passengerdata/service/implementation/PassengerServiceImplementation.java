@@ -60,7 +60,6 @@ public class PassengerServiceImplementation implements PassengerService {
 
     @Override
     public void deleteAllPassengers() {
-        passengerRepository.findAll();
         passengerRepository.deleteAll();
     }
 }
