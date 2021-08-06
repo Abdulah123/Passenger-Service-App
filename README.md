@@ -39,7 +39,7 @@ This App allows you to preform CRUD operations for the passenger and search for 
 | _id      | Unique id for the passenger (Long)     |
 | firstName      | String     |
 | lastName      | String     |
-| passportId      | int     |
+| passportId      | long     |
 | email      | String     |
 
 ## Routes
